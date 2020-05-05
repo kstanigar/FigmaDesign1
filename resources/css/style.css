@@ -135,6 +135,76 @@ nav {
     opacity: 1;
 }
 
+/* My story Page */
+.banner {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+.banner .author {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.author h1 {
+    font-size: 42px;
+}
+
+.author h3 {
+    font-size: 32px;
+    padding: 10px 0;
+}
+
+.story, .my-work {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 50px;s
+}
+
+.story-description, 
+.work-description {
+    width: 50%;
+}
+
+.story-description h3,
+.work-description h3 {
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+.story-description p,
+.work-description p {
+    padding: 20px 40px 0px 0px;
+    font-size: 20px;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.work-gallery img {
+    width: 100%;
+    height: 100%;
+    
+}
+
 @keyframes dot {
     0% {
         transform: scale(2);
@@ -142,5 +212,25 @@ nav {
 
     100% {
         transform: scale(4);
+    }
+}
+
+@media (max-width: 1024px) {
+    .pages {
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .hero {
+        grid-column: 2/3;
+    }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .details {
+        grid-column: 2/3;
     }
 }
