@@ -187,7 +187,7 @@ nav {
     width: 90%;
     margin: auto;
     justify-content: space-between;
-    padding-top: 50px;s
+    padding-top: 50px;
 }
 
 .story-description, 
@@ -209,13 +209,13 @@ nav {
 
 .work-gallery {
     display: grid;
-    background: rgb(17, 9, 9);
     grid-template-columns: repeat(3, 200px);
+    object-fit: cover;
+    
 }
 
 .work-gallery img {
     width: 100%;
-    padding: 1px;
 }
 
 @keyframes dot {
@@ -228,6 +228,8 @@ nav {
     }
 }
 
+
+/* Media Quesries */
 @media (max-width: 1024px) {
     .page {
         grid-template-columns: 5% 1fr 5%;
